@@ -26,10 +26,98 @@
 
     <main>
         <img class="baner" src="./assets/img/ComoIngressar.jpg">
+        <h2>Uma duvida muito comun e quais habilidades preciso ter para ingressar nessa area.</h2>
+        <p>Na area da informaticaa o logica e essencial, não sendo difrente disso a logica e parte fundamental para poder entrar nesse meio, outra habilidade necessaria e um conhecimento em matematica por conta do modo que o computador quantico opera.</p>
 
+        <div class="topicos"></div>
 
+        <section id="Cursos">
+            <h2>Cursos</h2>
+            <p>Para se aprender mais acertivamente listamos alguns cursos </p>
+            <div class="CursosList">
+                <img src="./assets/img/Mit.png">
+                <h3>MIt</h3>
+                <p>Descubra as implicações comerciais e técnicas da nova fronteira da computação e como você pode aplicá-las à sua organização com este programa de dois cursos do MIT xPRO.</p>
+                <p>DURAÇÃO: 4 semanas por curso</p>
+                <p>PREÇO: US$ 2.319</p>
+                <button><a href="https://learn-xpro.mit.edu/quantum-computing">Site do curso</a></button>
+            </div>
 
+            <div class="CursosList">
+                <img src="./assets/img/IbmLogo.png">
+                <h3>IBM</h3>
+                <p>Aprenda os fundamentos da computação quântica e como usar os serviços e sistemas IBM Quantum para resolver problemas do mundo real.</p>
+                <p>DURAÇÃO: 4 a 7 Lições</p>
+                <button><a href="https://learning.quantum-computing.ibm.com/">Site do curso</a></button>
+            </div>
 
+            <div class="CursosList">
+                <img src="./assets/img/Edx.png">
+                <h3>Edx</h3>
+                <p>A computação quântica é um campo que vai além dos limites da computação tradicional. Explore como funciona a computação quântica e aprenda mais sobre trabalhos que usam a computação quântica com este guia da edX.</p>
+                <p>DURAÇÃO: 3 modulos, 18 horas</p>
+                <button><a href="https://www.edx.org/learn/quantum-computing">Site do curso</a></button>
+            </div>
+
+        </section>
+
+        <div class="topicos"></div>
+
+        <h2>Práticas</h2>
+        <p>Para poder realmente eprender e necessario a pratica, e possivel realizala apartir do Qiskit Quantum SDK. É o SDK quântico de software livre baseado em python mais usado no mundo. Sendo possivel utilizar o IBM cloud que possue uma instancia de quantum.</p>
+        <p>Como todo inicio em uma programaçao recomendamos iniciar com um Hello Word, o video abaixo mostra como fazelo.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RrUTwq5jKM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3> Codigo </h3>
+        <p>from qiskit import QuantumCircuit, transpile, Aer, assemble, execute</p>
+    
+        <p> <strong>Criar um circuito quântico simples com um qubit:</strong></p>
+        <p>  qc = QuantumCircuit(1, 1)</p>
+            
+        <p>  <strong> Aplicar uma porta Hadamard no qubit:</strong></p>
+        <p>  qc.h(0)</p>
+            
+        <p>  <strong> Medir o qubit:</strong></p>
+        <p>  qc.measure(0, 0)</p>
+            
+        <p>  <strong> Visualizar o circuito:</strong></p>
+        <p>  print("Circuito quântico:")</p>
+        <p> print(qc)</p>
+            
+        <p>  <strong> Simular o circuito usando o Aer backend:</strong></p>
+        <p>  simulator = Aer.get_backend('aer_simulator')</p>
+        <p>  compiled_circuit = transpile(qc, simulator)</p>
+        <p> qobj = assemble(compiled_circuit)</p>
+        <p>  result = execute(qc, simulator).result()</p>
+            
+        <p>  <strong> Obter e imprimir o resultado da simulação:</strong></p>
+        <p>  counts = result.get_counts(qc)</p>
+        <p>  print("\nResultado da simulação:")</p>
+        <p>  print(counts)</p>
+       
+        <h2>video explicação de partes gerais do cogigo.</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jx7IuJMYtJM?si=mOxBVI1fs9f3lhQH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h2>Qiskit</h2>
+        <p>O Qiskit da Ibm pode ser utilizado de varias maneiras para programar os qubits. E posivel utilizado como Api para a sua Sdk, como por exemplo utilizando no visual satudio code, outro jeito de se utilizar e pelo proprio site da empresa. Ele e diretamente ligado ao Ibm cloud, sendo que o acesso gratis e limitado a 127 qubit por uma execusao de no maximo 10 minutos, apos esse tempo ele parara.</p>
+        <p>video demonstrativo da plataforma.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ej8-959zido" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <p>Para se programar em quantum e de suma importancia saber que não se utiliza os bits tradicionais, se utilizam os bits 0, 1 ou a sua superposição que consiste em uma projeção dos dois sendo assim uma soma de dois ou mais estados distintos. Outro processo que envolve esse meio e o entrelacamento que e os processadores quânticos podem obter conclusões sobre uma partícula medindo outra. Por exemplo, eles podem determinar que, se um bit quântico tem rotações ascendentes, o outro sempre terá rotações descendentes e vice-versa. O entrelaçamento quântico permite que os computadores quânticos resolvam problemas complexos mais rapidamente. Para se ter mais base nese tema indicamos o video a seguir que explica o modo de execução de um programa. </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yh789q5qur0?si=6fWybZSBKRWG5u1q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
     </main>
 
     <footer>
