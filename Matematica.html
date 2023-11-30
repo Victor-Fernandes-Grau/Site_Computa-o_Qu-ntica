@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1998/1998708.png">
+    <title>Forum sobre Computação Quântica</title>
+    <link rel="stylesheet" href="assets/css/Matema.css">
+</head>
+<body>
+    <header>
+        <h1>Matemática na Computação Quântica</h1>   
+        <nav>
+            <ul>
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./Sobre.html">Sobre</a></li>
+                <li><a href="./Ingressar.html">Como Ingressar</a></li>
+                <li><a href="./Aplicações.html">Aplicações Práticas</a></li>
+                <li><a href="./DesafiosOportunidades.html">Desafios e Oportunidades</a></li>
+                <li><a href="./Matematica.html">Matemática</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img class="baner" src="./assets/img/matematica.png">
+            <h1>Matemática dos Computadores Quânticos</h1>
+            <section>
+                <h1>Fundamentação Matemática da Computação Quântica</h1>
+
+                    <p>A computação quântica, embora desafiadora, possui uma base matemática robusta que a diferencia da computação clássica. Em vez de bits, a unidade básica é o qubit, cujo estado é descrito por um vetor no espaço de Hilbert complexo. Essa representação matemática possibilita a superposição, permitindo que qubits existam em múltiplos estados simultaneamente.</p>
+
+                    <h2>Álgebra Linear e Qubits</h2>
+
+                        <p>O formalismo matemático crucial na computação quântica é a álgebra linear. A transformação de qubits é expressa por operadores unitários, representados por matrizes unitárias. A evolução temporal do sistema quântico é regida pela equação de Schrödinger, proporcionando uma compreensão matemática profunda do comportamento quântico.</p>
+                    
+                    <h2>Problema de fatoração</h2>
+                    
+                        <p>Hoje, a segurança das comunicações é garantida quase universalmente por meio da criptografia RSA. Este método baseia-se no fato de que grandes fatores primos de grandes números complexos não podem ser usados. O problema é artificial. A criptografia requer dois ou mais números primos grandes e sua multiplicação. A decodificação tenta trabalhar de trás para frente, do produto para o elemento. É trabalho duro. O maior número calculado até agora (“RSA-640”) tem 193 casas decimais e levou cinco meses e “cerca de 30 anos de CPU Opteron de 2,2 GHz”. Nesse ritmo, o número de 1.024 bits atualmente recomendado por sites comerciais de criptografia levaria cerca de 10.145 anos (“bit” é a abreviação de “binário”; cada bit adicional adiciona um fator de 2 ao cálculo do tamanho). “Para maior segurança ou se você for paranóico, use 2.048 ou 4.096 bits”, acrescenta o site.</p>
+                        <p>Um computador quântico de tamanho adequado pode processar esses grandes números em muito menos tempo. Para um número de 1.024 bits, o algoritmo de Shor requer cerca de 1.024 3, ou cerca de 1 bilhão de operações. Não tenho nenhuma informação sobre a rapidez com que as operações quânticas podem ser executadas, mas se cada uma demorasse um segundo a nossa fatoração duraria 34 anos. Se um computador quântico pudesse funcionar na velocidade dos computadores eletrônicos atuais (100 milhões de instruções por segundo ou mais), então a fatoração do número de 1.024 bits seria uma questão de segundos.</p>
+                        <p>Uma nota sobre "tamanho adequado". Para executar o algoritmo de Shor em um número de 1.024 bits, são necessários dois registradores quânticos, um de 2.048 qubits e outro de 1.024. Todos esses qubits precisam estar "em coerência", para que a totalidade de seus estados se comporte como um estado único e emaranhado. (Mais sobre o emaranhado mais tarde.) Em 2001, quando os cientistas da IBM criaram um registro quântico coerente com sete qubits e o executaram com 15x o algoritmo Shor, isso foi relatado como uma conquista tecnológica notável.</p>
+                        <p>Nesta coluna e no próximo mês, fornecerei uma explicação do algoritmo de fatoração de Shor para um leitor de matemática geral. Este mês cobriremos os fundamentos da teoria dos números junto com as transformadas discretas e rápidas de Fourier. Eles converteram a fatoração em um problema estruturado de localização de frequência para aplicação à computação quântica. O problema em si tem uma resposta clara, mas leva um tempo exponencial para ser resolvido. A coluna do próximo mês examinará mais especificamente os aspectos de computação quântica do algoritmo, incluindo superposição e emaranhamento, o que leva ao engenhoso jiu-jitsu quântico de Shor, que aumenta as chances de obter uma resposta útil a partir de uma leitura quântica. Esta probabilidade é suficientemente elevada e o tempo de execução numa máquina adequada é suficientemente curto para permitir que o cálculo seja repetido até que o factor desconhecido seja obtido. </p>
+
+                    <h2>Teoria dos Números e Análise de Fourier</h2>
+
+                        <p>A luz de uma estrela pode ser dividida em um espectro no qual as frequências características de seus elementos podem ser detectadas. Da mesma forma, algum N agregado pode ser feito para produzir um espectro a partir do qual seus coeficientes podem ser calculados.</p>
+                        <p>Escolha um número primo em relação a N e liste as potências inteiras do módulo N: a, a 2, a 3,.... Se a e N são coprimos, então pelo teorema de Euler esta lista eventualmente incluirá o número 1. (O teorema de Euler diz especificamente que se φ(N) representa o número de inteiros positivos menores que N que é primo de N então φ(N) é igual a 1 módulo N). Suponha que isso aconteça para potências pares de a, por exemplo a 2 b = 1 mod N, o que significa a 2 b – 1 = 0 mod N. Isso significa que (ab + 1) (ab – 1) é um múltiplo de N; se for uma vez N, temos fatores; caso contrário, o algoritmo euclidiano encontrará rapidamente fatores comuns, como a b + 1 e N.</p>
+
+                    <h2>Transformadas Discretas de Fourier</h2>
+
+                        <p>A transformada de Fourier detecta periodicidade; encontraremos b usando uma adaptação quântica da transformada rápida de Fourier, uma versão acelerada da transformada discreta de Fourier, que surge da adaptação a cadeias de séries de Fourier destinadas a trabalhar com funções contínuas.</p>
+                        <p>Os coeficientes de Fourier (complexos) da função de valor real f(x) definida em [0,2 A] são:</p>
+                        <img src="./assets/img/Transformadas Discretas de Fourier.jpg">
+
+                    <h2>Transformada de uma sequência periódica</h2>
+
+                        <p>Suponha que f tenha período p, ou seja, f m+p = f m para cada valor de m; O caso mais simples de analisar é o acontecimento em que p é um divisor de 2 A, tomando que p = 2 A/k, k é um número inteiro. No caso, se n não for um múltiplo de k (caixa verde nos exemplos abaixo), então o reaparecimento periódico de um elemento da sequência f m é multiplicado pelos coeficientes que passam pelo conjunto completo de raízes é igual a 1 e, portanto, soma a 0. A fórmula explícita é:</p>
+                        <img src="./assets/img/Transformada de uma sequência periódica.jpg">
+                            
+                    <h2>Entrelaçamento e Teoria da Informação Quântica</h2>
+
+                        <p>O entrelaçamento, fenômeno emblemático da mecânica quântica, é intrincado e encontra sua descrição matemática na teoria da informação quântica. O estado entrelaçado de dois qubits é caracterizado por um emaranhamento não separável, onde a medida do estado de um qubit instantaneamente determina o estado do outro, independentemente da distância entre eles. A representação matemática utiliza operadores densidade e estados entrelaçados, fornecendo uma base para entender a correlação quântica e explorar aplicações em comunicação quântica e computação quântica distribuída.</p>
+
+                    <h2>Algoritmos Quânticos e Complexidade Computacional</h2>
+
+                         <p>Os algoritmos quânticos destacam-se por sua capacidade de realizar tarefas de forma exponencialmente mais eficiente do que algoritmos clássicos. O algoritmo de Shor, por exemplo, é notável por sua habilidade em fatorar números inteiros em tempo polinomial, desafiando a segurança dos sistemas criptográficos convencionais. Da mesma forma, o algoritmo de Grover destaca-se na busca em bancos de dados não estruturados. Ambos os casos têm bases matemáticas profundas em teoria dos números, álgebra linear e teoria da complexidade computacional quântica. Esses algoritmos exploram a capacidade dos qubits de explorar superposições e interferências, revelando uma nova camada de complexidade matemática na computação.</p>
+
+                        <p>A teoria da complexidade computacional quântica, por sua vez, explora a eficiência dos algoritmos quânticos em classes específicas de problemas. Modelos de circuitos quânticos, classes de complexidade quântica e oráculos quânticos oferecem ferramentas matemáticas para entender os limites e as capacidades intrínsecas dessa forma inovadora de processamento. A interação entre a matemática e os algoritmos quânticos cria uma sinergia única, impulsionando o desenvolvimento dessa área e prometendo aplicações práticas inovadoras à medida que a pesquisa avança.</p>
+
+                    <h2>Correção de Erros Quânticos</h2>
+
+                        <p>Dada a suscetibilidade dos qubits a erros, a teoria da informação quântica também desempenha um papel fundamental na correção de erros quânticos. Códigos quânticos de correção de erros, como os códigos de superfície, são construídos com base em conceitos matemáticos sofisticados para preservar a integridade da informação quântica.</p>
+
+                 <h2>Perspectivas Futuras na Interseção da Matemática e Computação Quântica</h2>
+
+                        <p>A interseção entre a matemática e a computação quântica continua a ser um terreno fértil para pesquisas inovadoras. Desenvolvimentos na teoria dos grupos, topologia quântica e geometria diferencial estão moldando o entendimento e a aplicação da computação quântica. À medida que a pesquisa avança, a sólida fundamentação matemática da computação quântica é a chave para desvendar o potencial revolucionário dessa tecnologia emergente.</p>
+                    
+    </main>
+    <footer>
+        <p> Victor Fernandes</p>
+        <p> Vitor Rodrigues</p>
+    </footer>
+</body>
