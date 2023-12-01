@@ -114,4 +114,9 @@ input, textarea, button {
         padding-left: 10%;
         padding-right: 10%;
     }
+    nav ul li {
+        display:block;
+        margin-right: 20px;
+    }
+    
 }
