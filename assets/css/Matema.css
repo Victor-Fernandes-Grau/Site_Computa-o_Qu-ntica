@@ -63,4 +63,8 @@ img.baner{
         display:inline-flex;
         margin-right: 20px;
     }
+    img.formula{
+    max-width: 80%;
+    height: auto;
+    }
 }
