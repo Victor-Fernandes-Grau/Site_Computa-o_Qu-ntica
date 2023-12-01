@@ -84,3 +84,14 @@ iframe{
     padding-left: 25%;
     padding-right: 25%;
 }
+@media screen and (max-width: 1090px){
+    .CursosList {
+        display: inline-block;
+        width: 100%;
+        margin-right: 1%;
+        margin-left: 1%;
+        vertical-align: top;
+        text-align: center;
+    }
+    
+}
