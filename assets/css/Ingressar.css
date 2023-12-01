@@ -93,5 +93,9 @@ iframe{
         vertical-align: top;
         text-align: center;
     }
-    
+    iframe{
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
