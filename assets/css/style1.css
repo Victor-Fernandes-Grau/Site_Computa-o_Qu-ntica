@@ -104,7 +104,7 @@ input, textarea, button {
     border-color: black;
     border-top-style: solid;
 }
-@media screen and (max-width: 1090px){
+@media screen and (max-width: 700px){
     .Info {
         text-align: center;
         width: 80%;
