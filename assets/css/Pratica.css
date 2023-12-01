@@ -104,5 +104,8 @@ img.Img_esquerda{
     border-top-style: solid;
 }
 @media screen and (max-width: 1090px){
-    
+     nav ul li {
+        display:inline-flex;
+        margin-right: 20px;
+    }
 }
