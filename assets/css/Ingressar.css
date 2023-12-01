@@ -84,7 +84,7 @@ iframe{
     padding-left: 25%;
     padding-right: 25%;
 }
-@media screen and (max-width: 1090px){
+@media screen and (max-width: 700px){
     .CursosList {
         display: inline-block;
         width: 100%;
